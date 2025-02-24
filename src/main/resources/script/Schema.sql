@@ -27,3 +27,4 @@ CREATE TABLE book_category(
     CONSTRAINT category_fk FOREIGN KEY (category_id) REFERENCES category
                           ON UPDATE CASCADE ON DELETE CASCADE
 );
+

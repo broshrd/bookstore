@@ -1,9 +1,9 @@
-package org.example.demobookstore.service.serviceImpl;
+package org.example.demobookstore.service.serviceImp;
 
-import org.example.demobookstore.AuthorService;
 import org.example.demobookstore.model.Author;
 import org.example.demobookstore.model.Dto.request.AuthorRequest;
 import org.example.demobookstore.repository.AuthorRepository;
+import org.example.demobookstore.service.AuthorService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 

@@ -1,7 +1,6 @@
 package org.example.demobookstore.controller;
 
-import lombok.Data;
-import org.example.demobookstore.AuthorService;
+import org.example.demobookstore.service.AuthorService;
 import org.example.demobookstore.model.Author;
 import org.example.demobookstore.model.Dto.request.AuthorRequest;
 import org.example.demobookstore.model.Dto.response.APIResponse;

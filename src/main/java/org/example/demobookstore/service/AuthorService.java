@@ -1,4 +1,4 @@
-package org.example.demobookstore;
+package org.example.demobookstore.service;
 
 import org.example.demobookstore.model.Author;
 import org.example.demobookstore.model.Dto.request.AuthorRequest;
