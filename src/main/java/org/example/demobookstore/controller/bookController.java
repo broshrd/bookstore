@@ -23,15 +23,15 @@ public class bookController {
     }
     @GetMapping
     public ResponseEntity<APIResponse<List<Book>>> findAllBooks(){
-        return ResponseEntity.status(HttpStatus.OK).body(
-                new APIResponse<>(
-                        "get all book succesfully",
-                        HttpStatus.OK,
-                        bookService.findAllBooks(),
-                        LocalDateTime.now()
-                )
-        );
+       APIResponse<List<Book>> response = APIResponse.<List<Book>>builder()
+               .message("get all book successful")
+               .payload(bookService.findAllBooks())
+               .status(HttpStatus.OK)
+               .dateTime(LocalDateTime.now())
+               .build();
+       return ResponseEntity.status(HttpStatus.FOUND).body(response);
     }
+
     @GetMapping("/{id}")
     public ResponseEntity<APIResponse<Book>> findBookById(@PathVariable int id){
         return ResponseEntity.status(HttpStatus.OK).body(
